@@ -290,7 +290,23 @@ nav{
 }
 
 .left img{
-    width: 250px;
+    /* Daily Menu Image */
+.daily-menu-img {
+    width: 50%;
+    max-width: 250px;
+    height: 160px;
+    object-fit: cover;
+    display: block;
+    margin: 20px auto;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.daily-menu-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+}
 }
 .right{
     max-width: 600px;
@@ -802,4 +818,13 @@ nav{
     .contact-container{
         flex-direction:column;
     }
+}
+.welcome {
+    background: linear-gradient(rgba(0,0,0,0.5),
+                rgba(0,0,0,0.5)),
+                url("https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=1600");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
 }
